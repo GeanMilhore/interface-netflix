@@ -1,0 +1,43 @@
+/* Hoje em dia é possivel declarar variaveis no CSS*/
+:root{
+    /* Boa prática, permite a formatação das cores de todo o site uma vez só*/
+    --vermelho: #E50914;
+    --preta:  #141414;
+}
+
+/*Resetando o CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* O limite dos elementos internos são a borda da caixa*/
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex; /* Vira uma flexbox */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /* Quando o mouse estiver em cima */
+    color: #fff;
+}
+
