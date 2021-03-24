@@ -90,9 +90,15 @@ header nav a:hover{ /* Quando o mouse estiver em cima */
 /* Envelopar (Wrapper) */
 
 .container{
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .filme-principal .container{
     width: 60%; /* Quanto de largura vai ocupar na tela */
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
