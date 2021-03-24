@@ -84,5 +84,15 @@ header nav a:hover{ /* Quando o mouse estiver em cima */
 }
 
 .botao i {
-    margin-right: 8px;
+    margin-right: 10px;
+}
+
+/* Envelopar (Wrapper) */
+
+.container{
+    margin-left: 3rem;
+}
+
+.filme-principal .container{
+    width: 60%; /* Quanto de largura vai ocupar na tela */
 }
