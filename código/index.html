@@ -40,7 +40,7 @@
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button role="button" class="botao">
+                    <button id="btn-info" role="button" class="botao">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -84,6 +84,28 @@
         </div>
     </div>
 
+    <div id="pop-info" class="informacoes"> <!-- parte escura do pop up -->
+        <div class="modal"> <!-- Criando um pop up -->
+            <button class="fechar">X</button>
+            <h3 class="title-popup"> Mais informações </h3>
+            <div class="logo-serie">
+                <img class="titulo-logo" src="img/serie-logo.png" alt="Logo da serie">
+            </div>
+            <div class="detalhes-tecnicos">
+                <h4 class="titulo-serie">Breaking Bad</h4>
+                <p class="cinza">2008 | 18 | 5 temporadas | Séries dramáticas </p>
+            </div>
+            <p class="sinopse">
+                Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos.
+            </p>
+            <div class="estrelas">
+                <p class="estrelando"> <span class="cinza">Estrelando:</span>  Bryan Cranston, Aaron Paul, Anna Gunn</p>
+                <p class="criacao"><span class="cinza">Criação:</span> Vince Gilligan</p>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Utilizando icones com o font Awesome -->
     <script src="https://kit.fontawesome.com/e38a8b2a0e.js" crossorigin="anonymous"></script>
 
@@ -91,6 +113,9 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+
+    <!-- JavaScript do pop up-->
+    <script src="js/main.js"></script>
 
 </body>
 </html>

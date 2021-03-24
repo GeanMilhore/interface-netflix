@@ -102,3 +102,93 @@ header nav a:hover{ /* Quando o mouse estiver em cima */
     width: 100%;
     display: block;
 }
+
+.modal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 25rem;
+    padding: 5%;
+    margin-top: -15%;
+    box-shadow: 0 0 0 30px var(--preta);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 0, 0.7)100%) , url('../img/background-pop.jpg');
+    background-color: rgba(0, 0, 0, 0.301);
+    background-position: 40% center;
+    background-size: cover;
+}
+
+.modal .logo-serie{
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+
+.detalhes-tecnicos{
+    margin-bottom: 2%;
+}
+
+.sinopse{
+    margin-bottom: 2%;
+}
+
+.title-popup{
+    position: absolute;
+    top: -25px;
+    left: 0px;
+}
+
+.titulo-logo{
+    width: 70%;
+}
+
+.cinza{
+    color: #a1a1a1;
+}
+
+.informacoes{
+    width: 100vw; /* View port Width */
+    height: 130vh; /* View port Height */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color:rgba(0, 0, 0,.8);
+    z-index: 2000;/* Garante que fique por cima de todos os outros itens */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes.mostrar{
+    display: flex;
+}
+
+.fechar {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border:none;
+    background-color: var(--vermelho);
+    color: white;
+    cursor: pointer;
+}
+
+/* Utilizando Keyframes */
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
