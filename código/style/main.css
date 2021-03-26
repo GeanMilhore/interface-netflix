@@ -1,4 +1,4 @@
-/* Hoje em dia é possivel declarar variaveis no CSS*/
+﻿/* Hoje em dia é possivel declarar variaveis no CSS*/
 :root{
     /* Boa prática, permite a formatação das cores de todo o site uma vez só*/
     --vermelho: #E50914;
@@ -81,6 +81,10 @@ header nav a:hover{ /* Quando o mouse estiver em cima */
 .botao:hover{
     background-color: white;
     color:black;
+}
+
+.botao:focus{
+    outline: 0px auto -webkit-focus-ring-color;
 }
 
 .botao i {

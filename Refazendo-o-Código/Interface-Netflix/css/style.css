@@ -1,0 +1,211 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: var(--preto);
+    font-size: 16px;
+}
+
+header .cabecalho{
+    color: #AAAAAA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a{
+    color: #AAA;
+    padding-right: 10px;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+header .nome-marca{
+    color: var(--vermelho);
+    font-size: 40px;
+    font-family: Arial Black;
+    padding-left:40px;
+}
+
+main .filme-principal{
+    display: flex;
+    align-items: flex-start;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) , url('../img/background-main.jpg');
+    height: 400px;
+    padding-left: 40px;
+}
+
+main .titulo{
+    margin-top: 5rem;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main .filme-principal .desc {
+    width: 40%;
+    margin-top: 15px;
+}
+
+.botao{
+    font-size: 12px;
+    border: none;
+    padding: 12px 25px;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease all; /* Evita a transição no inicio da página */
+    margin-right: 15px;
+}
+
+.botao:hover{
+    color: black;
+    background-color: white;
+}
+
+.botao:focus{
+    outline: none;
+}
+
+.botoes{
+    margin-top: 40px;
+}
+
+.botoes i{
+    margin-right: 13px;
+}
+
+/* Mexendo com o Pop-UP */
+.mais-informacoes{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 130vh;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-info{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    background-color: var(--preto);
+    padding: 12px;
+    border: 1px rgb(94, 89, 89) solid;
+}
+
+.mais-informacoes.mostrar{
+    display: flex;
+}
+
+/* Conteúdo do Pop-UP */
+.pop-up{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background: var(--preto);
+    width: 60%;
+    height: 65%;
+    margin-top: -11%;
+}
+
+.fechar{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    font-size: 12pt;
+    color: white;
+    cursor: pointer;
+}
+
+.fechar:focus{
+    outline: none;
+}
+
+.pop-up .foto-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-image: url('../img/mini5.jpg');
+    background-size: cover;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.text-cinza{
+    color: #afafaf;
+}
+
+.titulo-info{
+    font-size: 20pt;
+    margin-top: 3rem;
+}
+
+.dados-filme{
+    border-bottom: 1px solid gray;
+    padding: 0px 8%;
+    padding-bottom: 25px;
+}
+
+.sinopse{
+    width: 80%;
+    color: rgb(223, 223, 223);
+}
+
+.envolvidos{
+    width: 80%;
+}
+
+.atores{
+    width: 80%;
+}
+
+.criado{
+    width: 80%;
+}
+
+@keyframes pop-up{
+    from {
+        opacity: 0;
+        transform: translate3d(0,-80px,0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.mostrar.mais-informacoes{
+    animation: pop-up .3s;
+}

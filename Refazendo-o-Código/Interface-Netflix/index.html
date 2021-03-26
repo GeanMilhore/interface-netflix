@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Adicionando CSS do carrossel -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    
+    <title>NETFLIX</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <p class="nome-marca">
+                NETFLIX
+            </p>
+            <p>
+                <a href="#">Inicio</a>
+                <a href="#fs">Séries</a>
+                <a href="#fs">Filmes</a>
+                <a href="#">Documentários</a>
+            </p>
+        </nav>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <p class="titulo">
+                <h1>STAR WARS Episódio VI</h1>
+                <h2>O retorno do Jedi</h2>
+            </p>
+            <p class="desc">
+                Luke só se tornará um cavaleiro Jedi quando destruir Darth Vader, que ainda pretende atraí-lo para o lado negro da "Força". No entanto a luta entre os dois vai revelar um inesperado segredo.
+            </p>
+            <div class="botoes">
+                <button class="botao">
+                    <i class="fas fa-play"></i>ASSISTIR AGORA 
+                </button>
+                <button class="botao" id="btn-mais-info">
+                    <i class="fas fa-info-circle"></i>MAIS INFORMAÇÕES
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-filme" id="fs">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="img/mini1.jpg" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/mini10.jpg" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/mini7.jpg" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/mini4.jpg" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/mini5.jpg" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/mini6.jpg" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/mini3.jpg" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/mini8.jpg" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/mini9.jpg" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/mini2.jpg" class="box-filme">
+                </div>
+            </div>
+        </div>
+
+        <!-- Criando Pop-up -->
+        <div class="mais-informacoes">
+            <div class="pop-up">
+                <p class="m-info">Informações</p>
+                <button class="fechar">X</button>
+                <div class="foto-logo"></div>
+                <div class="informacoes">
+                    <p class="titulo-info">Star Wars Episódio VI</p>
+                    <p class="dados-filme text-cinza">1983 |  12  | &nbsp;2h13min&nbsp; |&nbsp; Ficção / Aventura</p>
+                    <p class="sinopse">Enquanto Luke Skywalker (Mark Hamill) liberta Han Solo (Harrison Ford) e a Princesa Leia (Carrie Fisher) das mãos de Jaba, o pior bandido das galáxias. Luke só se tornará um cavaleiro jedi quando destruir Darth Vader, que ainda pretende atraí-lo para o lado negro da "Força". No entanto a luta entre os dois vai revelar um inesperado segredo.</p>
+                    <p class="envolvidos">
+                        <p class="atores"><span class="text-cinza">Estrelando: </span>Mark Hamill, Harrison Ford, Carrie Fisher<br></p>
+                        <p class="criado">
+                            <span class="text-cinza">Criação: </span>George Lucas
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Utilizando icones com o font Awesome -->
+    <script src="https://kit.fontawesome.com/e38a8b2a0e.js" crossorigin="anonymous"></script>
+
+    <!-- Adicionando JS do carrossel -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+    <!-- Adiciona o JS do pop-up-->
+    <script src="js/main.js"></script>
+</body>
+</html>
