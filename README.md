@@ -55,10 +55,6 @@ pop[0].addEventListener('click',(e)=>{
                 pop[0].classList.remove('mostrar')
                 
             }
-            
-        })
-    }
-
 ```
 
 Nesta parte do código estamos colocando uma escuta no evento click, que ira <br>
