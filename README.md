@@ -1,7 +1,5 @@
 # Interface-Netflix :desktop_computer:
 
-## ( Projeto implementado durante uma aula na Digital Innovation One :pencil2: ) 
-
 ### Tecnologias utilizadas: :yellow_square: JavaScript
 
 
@@ -59,3 +57,5 @@ pop[0].addEventListener('click',(e)=>{
 
 Nesta parte do código estamos colocando uma escuta no evento click, que ira <br>
 verificar se os clicks estão fora da parte do Pop-up.
+
+## ( Projeto implementado durante uma aula na Digital Innovation One :pencil2: ) 
